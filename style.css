@@ -1,0 +1,309 @@
+input[type=checkbox]{
+	accent-color: green;
+
+}
+input[type=radio]{
+	accent-color: yellow;
+
+}
+input[type=range]{
+	accent-color: rgb(0, 0, 255);
+
+}
+progress{
+	accent-color: hsl(0, 100%, 50%, 1.9);
+
+}
+/*------ align-content-------*/
+
+ #main{
+
+ 	width: 100px;
+ 	height: 200px;
+ 	
+ 	border: 2px solid black;
+ 	
+ 	align-content: center;
+
+ }
+ #main div{
+ 	width: 100px;
+ 	height: 50px;
+
+ }
+ /*------ align-item -------*/
+
+
+ #mymain{
+
+ 	width: 250px;
+ 	height: 100px;
+ 	display: flex;
+ 	border: 2px solid black;
+ 	align-items: center;
+
+ }
+ #mymain div{
+ 	flex: 1;
+ 	display: flex;
+ 	align-items: center;
+ 	color: red;
+ 	font-size: 20px;
+
+ }
+ /*------ align-self -------*/
+ #mydiv1{
+
+ 	width: 250px;
+ 	height: 350px;
+ 	border: 2px solid black;
+ 	display: flex;
+ 	align-items: flex-start;
+ }
+ #mydiv1 div{
+ 	flex: 1;
+
+ }
+ #mybluediv{
+ 	align-self: center;
+ }
+ /*------ all property-------*/
+
+ html{
+
+ 	font-size: small;
+ 	color: green;
+ }
+ #ex1{
+
+ 	background-color: lightskyblue;
+ 	color: yellow;
+
+ }
+  #ex2{
+
+ 	background-color: yellow;
+ 	color: yellow;
+ 	all: inherit;
+ }
+  #ex3{
+
+ 	background-color: green;
+ 	color: yellow;
+ 	all: initial;
+ }
+  #ex4{
+
+ 	background-color: blue;
+ 	color: yellow;
+ 	all: unset;
+ }
+ /*------ animation-------*/
+
+ .animation{
+ 	width: 150px;
+ 	height: 150px;
+ 	background: red;
+ 	position: relative;
+ 	animation: mymove 5s infinite;
+ 	border-radius: 10px;
+
+ }
+
+ @keyframes mymove {
+ 	from{left: 0px;}
+ 	to{left: 500px;}
+ }
+ /*------ animation-delay -------*/
+  .animation-d{
+ 	width: 150px;
+ 	height: 150px;
+ 	background: lightskyblue;
+ 	position: relative;
+ 	animation: mymove 5s infinite;
+ 	border-radius: 10px;
+ 	animation-delay: 2s;
+
+ }
+
+ @keyframes mymove {
+ 	from{left: 0px;}
+ 	to{left: 500px;}
+ }
+ /*------ animation-direction -------*/
+  .animation-dec{
+ 	width: 150px;
+ 	height: 150px;
+ 	background: green;
+ 	position: relative;
+ 	animation: myfirst 5s;
+ 	border-radius: 10px;
+ 	animation-direction: alternate;
+
+ }
+
+ @keyframes myfirst {
+ 	0% {background: red; left: 0px; top: 0px;}
+ 	25% {background: yellow; left: 300px; top: 0px;}
+ 	50% {background: blue; left: 300px; top: 300px;}
+ 	75% {background: green; left: 0px; top: 300px;}
+ 	100% {background: red; left: 0px; top: 0px;}
+ 	
+ }
+ /*------ animation-duration -------*/
+   .animation-dur{
+ 	width: 150px;
+ 	height: 150px;
+ 	background: blue;
+ 	position: relative;
+ 	animation: love 5s infinite;
+ 	border-radius: 10px;
+ 	animation-duration: 6s;
+
+ }
+
+ @keyframes love {
+ 	from{left: 0px;}
+ 	to{left: 500px;}
+ }
+ /*------ animation-fill-mode -------*/
+    .animation-for{
+ 	width: 150px;
+ 	height: 150px;
+ 	background: red;
+ 	position: relative;
+ 	animation: fill 3s;
+ 	border-radius: 10px;
+ 	animation-fill-mode: forwards;
+ 	margin-top: 50px;
+
+ }
+
+ @keyframes fill {
+ 	from {top: 0px;}
+ 	to {top: 200px; background-color: blue;}
+
+
+ }
+
+ /*------  backdrop-filter-------*/
+
+ div.background {
+ 	margin-top: 30px;
+
+ 	background: lightskyblue url(images/img1.jpg) no-repeat center;
+ 	display: flex;
+ 	align-items: center;
+ 	background-size: cover;
+ 	justify-content: center;
+ 	width: 400px;
+ 	height: 400px;
+
+ }
+
+div.transbox {
+  background-color: rgba(255, 255, 255, 0.4);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+  padding: 50px;
+  margin: 30px;
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
+}
+h1.mar{
+
+	margin-top: 200px;
+}
+/*------  background------*/
+#body-background{
+	background: lightskyblue url(images/img3.jpg) no-repeat center;
+	width: 400px;
+	height: 400px;
+	margin-top: 50px;
+
+}
+/*------  background-clip-------*/
+#example1{
+	background: lightskyblue;
+	border: 10px dotted black;
+	padding: 15px;
+	background-clip: border-box;
+	font-size: 20px;
+}
+#example2{
+	background: lightskyblue;
+	border: 10px dotted black;
+	padding: 15px;
+	background-clip: padding-box;
+	font-size: 20px;
+}
+#example3{
+	background: lightskyblue;
+	border: 10px dotted black;
+	padding: 15px;
+	background-clip: content-box;
+	font-size: 20px;
+}
+
+
+#example4{
+	background: url(images/photo.jpg);
+	border: 10px dotted black;
+	background-repeat: no-repeat;
+	padding: 15px;
+	background-clip: border-box;
+	font-size: 20px;
+	background-origin: padding-box;
+	color: black;
+	background-size: 100px 100px;
+	
+	
+}
+
+#example5{
+	background: url(images/photo.jpg);
+	border: 10px dotted black;
+	padding: 15px;
+	background-clip: padding-box;
+	font-size: 20px;
+	background-origin: border-box;
+	background-repeat: no-repeat;
+	color: black;
+	background-size: 100px 100px;
+	
+	
+}
+#example6{
+	background: url(images/photo.jpg);
+	border: 10px dotted black;
+	padding: 15px;
+	background-clip: content-box;
+	font-size: 20px;
+	background-origin: content-box;
+	background-repeat: no-repeat;
+	color: black;
+	background-size: 100px 100px;
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
